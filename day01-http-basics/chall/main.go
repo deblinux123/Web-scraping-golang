@@ -38,6 +38,16 @@ func main() {
 		"Mozilla/5.0 (compatible; GoWebScraper/1.0)",
 	)
 
+	req.Header.Set(
+		"Accept",
+		"text/html",
+	)
+
+	// req.Header.Set(
+	// 	"Accept-Language",
+	// 	"en-US,en;q=0.9",
+	// )
+
 	resp, err := client.Do(req)
 
 	if err != nil {
@@ -47,12 +57,18 @@ func main() {
 
 	defer resp.Body.Close()
 
+	fmt.Println("========== REQUEST ==========")
+	fmt.Println("Method:", req.Method)
 	fmt.Println("Status:", resp.Status)
 	fmt.Println("Status code: ", resp.StatusCode)
 	fmt.Println("Content-Type:", resp.Header.Get("Content-Type"))
 	fmt.Println("Content-Length:", resp.ContentLength)
 	fmt.Println("Response Headers:")
-	fmt.Println(resp.Header)
+	for key, values := range req.Header {
+		for _, value := range values {
+			fmt.Println(key, ":", value)
+		}
+	}
 
 	if resp.StatusCode != http.StatusOK {
 		fmt.Println("Server returned a none 200 status code")
