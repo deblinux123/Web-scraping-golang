@@ -137,16 +137,4 @@ func main() {
 	fmt.Println("Phone:", contactInfo.Phone)
 	fmt.Println("Fax:", contactInfo.Fax)
 	fmt.Println("Email:", contactInfo.Email)
-
-	contact.Find("a").Each(func(i int, s *goquery.Selection) {
-		text := strings.TrimSpace(s.Text())
-		href, _ := s.Attr("href")
-
-		fmt.Printf(
-			"Link %d | Text: %q | Href: %q\n",
-			i,
-			text,
-			href,
-		)
-	})
 }
