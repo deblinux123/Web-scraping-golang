@@ -1,0 +1,62 @@
+[
+    {
+        "name": ".gitattributes",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/.gitattributes",
+        "status": "failed",
+        "size": 0
+    },
+    {
+        "name": "LICENSE",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/LICENSE",
+        "status": "failed",
+        "size": 0
+    },
+    {
+        "name": "README.md",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/README.md",
+        "status": "failed",
+        "size": 0
+    },
+    {
+        "name": "config.json",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/config.json",
+        "status": "failed",
+        "size": 0
+    },
+    {
+        "name": "generation_config.json",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/generation_config.json",
+        "status": "failed",
+        "size": 0
+    },
+    {
+        "name": "merges.txt",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/merges.txt",
+        "status": "failed",
+        "size": 0
+    },
+    {
+        "name": "model.safetensors",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/model.safetensors",
+        "status": "failed",
+        "size": 0
+    },
+    {
+        "name": "tokenizer.json",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/tokenizer.json",
+        "status": "failed",
+        "size": 0
+    },
+    {
+        "name": "tokenizer_config.json",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/tokenizer_config.json",
+        "status": "failed",
+        "size": 0
+    },
+    {
+        "name": "vocab.json",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/vocab.json",
+        "status": "failed",
+        "size": 0
+    }
+]
