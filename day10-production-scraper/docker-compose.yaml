@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: scraper-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: scraper
+      POSTGRES_PASSWORD: scraper_password
+      POSTGRES_DB: scraper
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - scraper_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  scraper_postgres_data:

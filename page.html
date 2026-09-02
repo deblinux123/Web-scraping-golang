@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scrapify Playground — Free Legal Website to Practice Web Scraping</title>
+  <meta name="description" content="Practice web scraping for free on a site built to be scraped. Static HTML, JavaScript pages, ecommerce search, tables, pagination, forms, infinite scroll, and JSON APIs. Safe for tutorials, courses, and interviews." />
+  <meta name="keywords" content="practice web scraping, web scraping playground, learn web scraping free, legal website to scrape, scraping practice site, free scraping target, books to scrape alternative, playwright practice, scrapy practice website" />
+  <meta name="author" content="Scrapify Data Labs" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="canonical" href="https://scrapifydatalabs.com/" />
+  <link rel="alternate" type="text/plain" title="llms.txt" href="https://scrapifydatalabs.com/llms.txt" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://scrapifydatalabs.com/sitemap.xml" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Scrapify Playground" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Scrapify Playground — Free Legal Website to Practice Web Scraping" />
+  <meta property="og:description" content="Practice web scraping for free on a site built to be scraped. Static HTML, JavaScript pages, ecommerce search, tables, pagination, forms, infinite scroll, and JSON APIs. Safe for tutorials, courses, and interviews." />
+  <meta property="og:url" content="https://scrapifydatalabs.com/" />
+  <meta property="og:image" content="https://scrapifydatalabs.com/assets/og-default.svg" />
+  <meta property="og:image:alt" content="Scrapify Playground — free legal web scraping practice" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Scrapify Playground — Free Legal Website to Practice Web Scraping" />
+  <meta name="twitter:description" content="Practice web scraping for free on a site built to be scraped. Static HTML, JavaScript pages, ecommerce search, tables, pagination, forms, infinite scroll, and JSON APIs. Safe for tutorials, courses, and interviews." />
+  <meta name="twitter:image" content="https://scrapifydatalabs.com/assets/og-default.svg" />
+
+  <meta name="application-name" content="Scrapify Playground" />
+  <meta name="rating" content="General" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://scrapifydatalabs.com/#website",
+      "url": "https://scrapifydatalabs.com/",
+      "name": "Scrapify Playground",
+      "description": "Practice web scraping for free on a site built to be scraped. Static HTML, JavaScript pages, ecommerce search, tables, pagination, forms, infinite scroll, and JSON APIs. Safe for tutorials, courses, and interviews.",
+      "publisher": {
+        "@id": "https://scrapifydatalabs.com/#organization"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://scrapifydatalabs.com/use-cases.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://scrapifydatalabs.com/#organization",
+      "name": "Scrapify Data Labs",
+      "url": "https://scrapifydatalabs.com/",
+      "description": "Educational web scraping practice lab and tools."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://scrapifydatalabs.com/#webpage",
+      "url": "https://scrapifydatalabs.com/",
+      "name": "Scrapify Playground \u2014 Free Legal Website to Practice Web Scraping",
+      "description": "Practice web scraping for free on a site built to be scraped. Static HTML, JavaScript pages, ecommerce search, tables, pagination, forms, infinite scroll, and JSON APIs. Safe for tutorials, courses, and interviews.",
+      "isPartOf": {
+        "@id": "https://scrapifydatalabs.com/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Web scraping practice"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Course",
+      "@id": "https://scrapifydatalabs.com/#course",
+      "name": "Hands-on Web Scraping Practice Lab",
+      "description": "Free self-paced practice targets for learning web scraping legally.",
+      "provider": {
+        "@id": "https://scrapifydatalabs.com/#organization"
+      },
+      "isAccessibleForFree": true,
+      "educationalLevel": "Beginner to Advanced",
+      "teaches": "Web scraping with HTML, JavaScript, APIs, and ecommerce pages",
+      "url": "https://scrapifydatalabs.com/"
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark">S</span>
+        <span class="logo-text">Scrapify <span>Playground</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">Menu</button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href='/use-cases'>Use Cases</a></li>
+        <li><a href='/playground/static-products'>Playground</a></li>
+        <li><a href='/about'>About</a></li>
+                <li><a class="nav-discord" href="https://discord.gg/gwSB7u5Vz" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord community">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          Discord
+        </a></li>
+        <li><a class='nav-cta' href='/use-cases'>Start scraping</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Trusted practice lab · community on Discord</div>
+          <h1>Learn web scraping on a site <em>built to be scraped</em>.</h1>
+          <p class="hero-lead">
+            Anyone can come here and scrape. We provide real-world patterns —
+            static pages, JS-rendered content, tables, pagination, forms, lazy images,
+            and JSON APIs — so you can practice without legal or ethical risk.
+          </p>
+          <div class="hero-actions">
+            <a class='btn btn-primary' href='/use-cases'>Browse use cases</a>
+            <a class='btn btn-secondary' href='/playground/static-products'>Open playground</a>
+            <a class="btn btn-ghost" href="https://discord.gg/gwSB7u5Vz" target="_blank" rel="noopener noreferrer">Join Discord</a>
+          </div>
+          <div class="hero-meta">
+            <span><strong>40+</strong> practice pages</span>
+            <span><strong>Static · JS · Ecom · API</strong></span>
+            <span><strong>Free</strong> forever</span>
+          </div>
+        </div>
+        <aside class="hero-scrape" aria-label="Live field extraction animation">
+          <div class="hero-scrape-top">
+            <span>field extractor</span>
+            <span class="live">Live scrape</span>
+          </div>
+          <div class="hero-scrape-body">
+            <div class="hero-source">
+              <h3>Page DOM</h3>
+              <div class="scan-line" aria-hidden="true"></div>
+              <div class="mock-product">
+                <div class="thumb" aria-hidden="true">🎧</div>
+                <div class="field field-title" data-scan-field="title">NovaPulse Wireless Headphones</div>
+                <div class="field field-price" data-scan-field="price">$129.99</div>
+                <div class="field field-rating" data-scan-field="rating">★ 4.6 (214 reviews)</div>
+                <div class="field field-stock" data-scan-field="stock">In stock · Free delivery</div>
+              </div>
+            </div>
+            <div class="hero-output" aria-live="polite">
+              <h3>Extracted JSON</h3>
+              <div class="json-line"><span class="c-pun">{</span></div>
+              <div class="json-line">&nbsp;&nbsp;<span class="c-key">"title"</span><span class="c-pun">:</span> <span class="c-str">"NovaPulse…"</span><span class="c-pun">,</span></div>
+              <div class="json-line">&nbsp;&nbsp;<span class="c-key">"sku"</span><span class="c-pun">:</span> <span class="c-str">"SF-B0NP1001"</span><span class="c-pun">,</span></div>
+              <div class="json-line">&nbsp;&nbsp;<span class="c-key">"price"</span><span class="c-pun">:</span> <span class="c-num">129.99</span><span class="c-pun">,</span></div>
+              <div class="json-line">&nbsp;&nbsp;<span class="c-key">"rating"</span><span class="c-pun">:</span> <span class="c-num">4.6</span><span class="c-pun">,</span></div>
+              <div class="json-line">&nbsp;&nbsp;<span class="c-key">"in_stock"</span><span class="c-pun">:</span> <span class="c-num">true</span></div>
+              <div class="json-line"><span class="c-pun">}</span></div>
+            </div>
+          </div>
+          <div class="hero-scrape-footer">
+            <span class="hero-chip" data-chip="title">title</span>
+            <span class="hero-chip" data-chip="price">price</span>
+            <span class="hero-chip" data-chip="rating">rating</span>
+            <span class="hero-chip" data-chip="stock">stock</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-value">40+</div>
+            <div class="stat-label">Use cases</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Difficulty levels</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">0</div>
+            <div class="stat-label">Auth required</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">∞</div>
+            <div class="stat-label">Scrapes welcome</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>How it works</h2>
+            <p>Pick a pattern, scrape it, compare your result to the challenge goal.</p>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Choose a use case</h3>
+            <p>Static HTML, tables, pagination, JS rendering, APIs, and more.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Inspect the page</h3>
+            <p>Use DevTools or view-source. Stable selectors are documented per page.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Write your scraper</h3>
+            <p>Use Python, Node, curl, Playwright — whatever you are learning.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <h3>Level up</h3>
+            <p>Move from easy static pages to JS-rendered and multi-step flows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Featured use cases</h2>
+            <p>Start with these common real-world scraping patterns.</p>
+          </div>
+          <a class='btn btn-ghost btn-sm' href='/use-cases'>View all →</a>
+        </div>
+        <div class="card-grid">
+          <a class="card" href="/playground/nestly/">
+            <div class="card-icon" style="background:#e0efff;color:#006aff;">N</div>
+            <h3>Nestly home search</h3>
+            <p>Zillow-style listings with filters, map pins, and property detail pages.</p>
+            <div class="tag-row"><span class="badge badge-medium">Medium</span><span class="badge badge-static">Real estate</span></div>
+          </a>
+          <a class="card" href="/playground/careermesh/">
+            <div class="card-icon" style="background:#eaf3ff;color:#0a66c2;">CM</div>
+            <h3>CareerMesh network</h3>
+            <p>People profiles + jobs board (LinkedIn-style practice, different brand).</p>
+            <div class="tag-row"><span class="badge badge-medium">Medium</span><span class="badge badge-static">Static</span></div>
+          </a>
+          <a class="card" href="/playground/directory/">
+            <div class="card-icon" style="background:#fde8e8;color:#d32323;">📍</div>
+            <h3>LocalFind directory</h3>
+            <p>20 local businesses with ratings, hours, geo, amenities, and reviews.</p>
+            <div class="tag-row"><span class="badge badge-medium">Medium</span><span class="badge badge-static">Static</span></div>
+          </a>
+          <a class="card" href="/playground/ecommerce/">
+            <div class="card-icon" style="background:#eef2ff;color:#4f46e5;">🛒</div>
+            <h3>Marketplace ecommerce</h3>
+            <p>Search results, sponsored items, split prices, ratings, PDP, variants, and reviews.</p>
+            <div class="tag-row">
+              <span class="badge badge-medium">Medium</span>
+              <span class="badge badge-ecom">Ecommerce</span>
+            </div>
+          </a>
+          <a class='card' href='/playground/static-products'>
+            <div class="card-icon" style="background:var(--accent-soft);color:var(--accent);">📦</div>
+            <h3>Static product catalog</h3>
+            <p>Classic HTML product cards with price, rating, and stock — perfect first scrape.</p>
+            <div class="tag-row">
+              <span class="badge badge-easy">Easy</span>
+              <span class="badge badge-static">Static</span>
+            </div>
+          </a>
+          <a class='card' href='/playground/html-tables'>
+            <div class="card-icon" style="background:var(--amber-soft);color:var(--amber);">▦</div>
+            <h3>HTML tables</h3>
+            <p>Structured tabular data with headers, numeric columns, and nested cells.</p>
+            <div class="tag-row">
+              <span class="badge badge-easy">Easy</span>
+              <span class="badge badge-static">Static</span>
+            </div>
+          </a>
+          <a class='card' href='/playground/js-rendered'>
+            <div class="card-icon" style="background:var(--purple-soft);color:var(--purple);">{ }</div>
+            <h3>JavaScript rendered</h3>
+            <p>Content is injected after page load — needs a browser or headless tool.</p>
+            <div class="tag-row">
+              <span class="badge badge-medium">Medium</span>
+              <span class="badge badge-js">JavaScript</span>
+            </div>
+          </a>
+          <a class="card" href="/playground/pagination/">
+            <div class="card-icon" style="background:var(--green-soft);color:var(--green);">1·2·3</div>
+            <h3>Pagination</h3>
+            <p>Follow next links and merge multi-page result sets cleanly.</p>
+            <div class="tag-row">
+              <span class="badge badge-easy">Easy</span>
+              <span class="badge badge-static">Static</span>
+            </div>
+          </a>
+          <a class='card' href='/playground/infinite-scroll'>
+            <div class="card-icon" style="background:var(--purple-soft);color:var(--purple);">∞</div>
+            <h3>Infinite scroll</h3>
+            <p>Items load as you scroll — practice intercepting requests or scrolling in automation.</p>
+            <div class="tag-row">
+              <span class="badge badge-hard">Hard</span>
+              <span class="badge badge-js">JavaScript</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="challenge-banner">
+          <div>
+            <h2>Scraping this site is encouraged</h2>
+            <p>
+              No login. No CAPTCHA. No legal gray area. Use it for tutorials, interviews,
+              courses, and personal practice. Please stay polite with request rates.
+            </p>
+          </div>
+          <a class='btn btn-primary' href='/about'>Read the guidelines</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why-practice-here" aria-labelledby="why-heading">
+      <div class="container prose" style="max-width:48rem;">
+        <h2 id="why-heading">A free website built for people who want to try web scraping</h2>
+        <p>
+          Looking for a <strong>legal website to practice web scraping</strong>? Scrapify Playground
+          is a free scraping lab with realistic targets: product catalogs, marketplace-style search
+          results, product detail pages, HTML tables, pagination, JavaScript-rendered content,
+          infinite scroll, login forms, and JSON APIs. Unlike scraping live shops or social networks,
+          <strong>you are invited to scrape every page here</strong>.
+        </p>
+        <p>
+          Use it with Python (BeautifulSoup, scrapy, httpx, Playwright), Node (Cheerio, Puppeteer),
+          or any HTTP client. Ideal for courses, bootcamps, interview prep, and side projects that
+          need a safe scraping playground.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 id="faq-heading">Frequently asked questions</h2>
+            <p>Common questions from people learning web scraping.</p>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Is it legal to scrape Scrapify Playground?</summary>
+            <p>Yes. This site is intentionally built as a free, public practice target. Scraping is allowed and encouraged for learning, tutorials, and demos. Keep request rates polite on shared hosting.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What can I practice here?</summary>
+            <p>Static HTML products and blogs, HTML tables, multi-page pagination, nested markup, marketplace ecommerce search results, product detail pages, JavaScript-rendered content, infinite scroll, AJAX load more, client-side filters, lazy images, delayed content, login walls, and JSON APIs.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do I need an account or API key?</summary>
+            <p>No. Most pages are public. The login challenge publishes demo credentials on the page (<code>scraper</code> / <code>playground</code>).</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is this like books.toscrape or other practice sites?</summary>
+            <p>Yes in spirit — a safe place to learn — with more modern patterns including JavaScript pages and ecommerce-style search/PDP flows, plus documented stable selectors on each challenge.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Which tools work with this playground?</summary>
+            <p>Any stack: scrapy, BeautifulSoup, lxml, selectolax, Playwright, Puppeteer, Selenium, curl, or plain fetch. Start with static pages, then move to JS and marketplace challenges.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Where should beginners start?</summary>
+            <p>Start with the <a href='/playground/static-products'>static product catalog</a>, then <a href='/playground/html-tables'>HTML tables</a> and <a href="/playground/pagination/">pagination</a>. After that, try <a href="/playground/ecommerce/">ShopForge marketplace search</a> and <a href='/playground/js-rendered'>JS-rendered products</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="/">
+            <span class="logo-mark">S</span>
+            <span class="logo-text">Scrapify <span>Playground</span></span>
+          </a>
+          <p>A free practice lab for anyone learning web scraping — static, JavaScript, and API patterns.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href='/use-cases'>All use cases</a></li>
+            <li><a href='/playground/static-products'>Playground</a></li>
+            <li><a href='/about'>About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Static</h4>
+          <ul>
+            <li><a href="/playground/ecommerce/">Marketplace</a></li>
+            <li><a href='/playground/static-products'>Products</a></li>
+            <li><a href='/playground/html-tables'>Tables</a></li>
+            <li><a href="/playground/pagination/">Pagination</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Dynamic</h4>
+          <ul>
+            <li><a href='/playground/js-rendered'>JS rendered</a></li>
+            <li><a href='/playground/infinite-scroll'>Infinite scroll</a></li>
+            <li><a href='/playground/ajax-load-more'>AJAX load more</a></li>
+            <li><a href="/data/products.json">JSON API</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Built for learners · scrape away · <a class="footer-discord" href="https://discord.gg/gwSB7u5Vz" target="_blank" rel="noopener noreferrer">Join Discord</a></span>
+        <span>Scrapify Data Labs</span>
+      </div>
+    </div>
+  </footer>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is it legal to scrape Scrapify Playground?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. This site is intentionally built as a free, public practice target. Scraping is allowed and encouraged for learning, tutorials, and demos. Keep request rates polite on shared hosting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What can I practice here?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Static HTML products and blogs, HTML tables, multi-page pagination, nested markup, marketplace ecommerce search results, product detail pages, JavaScript-rendered content, infinite scroll, AJAX load more, client-side filters, lazy images, delayed content, login walls, and JSON APIs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an account or API key?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Most pages are public. The login challenge publishes demo credentials on the page (scraper / playground)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this like books.toscrape or other practice sites?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes in spirit — a safe place to learn — with more modern patterns including JavaScript pages and ecommerce-style search/PDP flows, plus documented stable selectors on each challenge."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which tools work with this playground?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Any stack: scrapy, BeautifulSoup, lxml, selectolax, Playwright, Puppeteer, Selenium, curl, or plain fetch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where should beginners start?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with the static product catalog, then HTML tables and pagination. After that, try ShopForge marketplace search and JS-rendered products."
+        }
+      }
+    ]
+  }
+  </script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/hero-scrape.js"></script>
+</body>
+</html>
